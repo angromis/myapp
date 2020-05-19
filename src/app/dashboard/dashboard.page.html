@@ -1,0 +1,37 @@
+
+<ion-header>
+  <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-button fill="outline" size="small"type="submit" (click)="authService.SignOut()" color="danger">Logout</ion-button>
+      </ion-buttons>
+    <ion-title>Hello,{{userlogedin.displayName}}</ion-title>
+   
+  </ion-toolbar>
+  
+</ion-header>
+
+<ion-content padding class="background">
+  <ion-grid  >
+    <ion-row>
+      <ion-searchbar class="searchbar"></ion-searchbar>
+    </ion-row>
+    <ion-row class="ion-align-items-start">
+     
+
+      <ion-col size-lg="4" size-md="4" size-sm="4" size="3" >
+        <ion-button class="button2" style="text-transform: none;">  Hot  </ion-button>
+      </ion-col>
+      <ion-col size-lg="4" size-md="4" size-sm="4" size="3">
+        <ion-button class="button1" style="text-transform: none;" >Reviews</ion-button>
+      </ion-col >
+      <ion-col size-lg="4" size-md="4" size-sm="4" size="3">
+        <ion-button class="button1" style="text-transform: none;">Booking</ion-button>
+      </ion-col>
+      <ion-col size-lg="4" size-md="4" size-sm="4" size="3">
+        <ion-button [routerLink]="['/map']" class="button2" style="text-transform: none;">Map</ion-button>
+      </ion-col>
+      
+
+    </ion-row>
+  </ion-grid>
+</ion-content>
