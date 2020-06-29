@@ -26,5 +26,25 @@
   text-decoration: none;
 }
 ion-content{
-  --ion-background-color:rgb(184, 236, 225);
+  --ion-background-color:rgb(66, 152, 133);
 } 
+ion-header{
+  --ion-background-color:rgb(66, 152, 133);
+}
+
+.login{
+  color:black;
+  --background:rgb(236, 240, 198);
+}
+
+.register{
+  color:black;
+  --background:rgb(155, 202, 214);
+}
+.already{
+  color: white;
+}
+ion-footer{
+  text-align: center;
+  color: black;
+}

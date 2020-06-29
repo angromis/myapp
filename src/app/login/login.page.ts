@@ -15,7 +15,7 @@ export class LoginPage implements OnInit {
 public tmp:boolean;
   constructor(
     public authService: AuthenticationService,
-    public router: Router
+    public router: Router 
   ) {}
 
   ngOnInit(
