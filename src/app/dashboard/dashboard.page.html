@@ -4,7 +4,7 @@
       <ion-buttons slot="start">
         <ion-button fill="outline" size="small"type="submit" (click)="authService.SignOut()" color="danger">Logout</ion-button>
       </ion-buttons>
-    <ion-title>Hello,mitsoo</ion-title>
+    <ion-title class="already">Hello,mitsoo</ion-title>
    
   </ion-toolbar>
   
@@ -37,7 +37,7 @@
   
   
   <ion-card-content>
-    <ion-label style="font-size: x-large;">Top Restaurants</ion-label>
+    <ion-label style="font-size: x-large;" class="already">Top Restaurants</ion-label>
     <ion-slides class="background" [options]="slideOptions"  #slider (ionSlidesDidLoad)="slidesDidLoad(slider)">
       <ion-slide *ngFor="let item of restList" (click)="getDetailedRestaurant(item.id)">
 
@@ -47,7 +47,7 @@
           </ion-row>  
          
           <ion-row>
-            <img src="{{item.photo}}" style="height:120px; width:300px;"/>
+            <img src="{{item.photo}}" style="height:230px; width:400px;"/>
           </ion-row>
         </ion-grid>
 
@@ -57,3 +57,4 @@
   </ion-card-content>
   
 </ion-content>
+<ion-footer >@Copyright agromis</ion-footer>

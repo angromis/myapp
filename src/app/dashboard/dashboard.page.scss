@@ -1,10 +1,14 @@
+ion-header{
+  --ion-background-color:rgb(22, 98, 89);
+}
+
 .button1 {
  
   --border-radius: 30%;
   --vertical-align: middle;
   --padding-start: 4px;
   --padding-end: 4px;
-  --background: rgb(138, 218, 245);
+  --background: rgb(129, 245, 218);
  
   --background-activated: green;
   --color: rgb(27, 26, 26);
@@ -17,7 +21,7 @@
   --vertical-align: middle;
   --padding-start: 21px;
   --padding-end: 21px;
-  --background: rgb(138, 218, 245);
+  --background: rgb(129, 245, 218);
  
   --background-activated: green;
   --color: rgb(27, 26, 26);
@@ -30,5 +34,16 @@
 
 
 ion-content{
-  --ion-background-color:rgb(236, 240, 198);
+  --ion-background-color:rgb(35, 160, 133);
+
   } 
+  
+  .already{
+    color: white;
+  }
+
+  ion-footer{
+    text-align: center;
+    color: black;
+    background-color: rgb(150, 250, 243);
+  }

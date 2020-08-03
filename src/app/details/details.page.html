@@ -9,4 +9,14 @@
 
 <ion-content *ngFor="let item of restaurant">
   <h1 >{{item.name}}</h1>
+  <img src="{{item.photo}}" width="250" height="200"style="middle;margin:0px 50px">
+  <p>{{item.description}}</p>
+  <label for="item.cousine">Cousine: {{item.cousine}}<br></label>
+  <label for="item.phone">Phone: {{item.phone}}<br></label>
+  <label for="item.site">Go to site: </label>
+  <a href="{{item.site}}">{{item.site}}<br></a>
+  <label for="item.location">Location: </label>
+
 </ion-content>
+
+<ion-footer >@Copyright agromis</ion-footer>
