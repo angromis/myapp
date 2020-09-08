@@ -34,7 +34,7 @@ export class HomePage {
     this.subscribe = this.platform.backButton.subscribeWithPriority(666666,() =>{
       if(this.constructor.name == "HomePage"){
         if(window.confirm("Do you want to exit app?")){
-          navigator["myapp"].exitApp();
+          navigator['app'].exitApp();
         }
       }
     })

@@ -39,7 +39,7 @@ export class ReviewsPage implements OnInit {
       
     }
     
-    this.rstService.getRatingRestaurant();
+    //this.rstService.getRatingRestaurant();
     console.log("~~~~~~~~~~~~")
     this.router.navigate(['/dashboard']);
   }

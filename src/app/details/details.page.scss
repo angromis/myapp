@@ -1,8 +1,11 @@
+ion-header{
+    --ion-background-color:rgb(207, 248, 240);
+  }
 h1{
     text-align: center;
 }
 ion-content{
-    --ion-background-color:rgb(236, 240, 198);
+    --ion-background-color:rgb(149, 228, 211);
 }
 
 p{
@@ -14,4 +17,5 @@ p{
 ion-footer{
     text-align: center;
     color: black;
+    background-color: rgb(229, 238, 237)
   }

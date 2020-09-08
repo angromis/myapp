@@ -27,7 +27,7 @@ export class DashboardPage implements OnInit {
     private router: Router,
     public authService: AuthenticationService
   ) { 
-  // this.userlogedin = this.authService.getUser();
+   this.userlogedin = this.authService.getUser();
   
     
   }

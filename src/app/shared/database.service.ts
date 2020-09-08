@@ -8,7 +8,9 @@ import { Observable,  } from 'rxjs';
 import { map, retryWhen } from  'rxjs/operators';
 import * as firebase from 'firebase/app';
 import 'firebase/firestore';
-import { resolve } from 'url';
+
+
+
 
 
 @Injectable({
@@ -21,7 +23,7 @@ export class DatabaseService {
   restRef: AngularFireObject<any>;
  
   sum :number;
-  count: number;
+  
   mylist
 
   constructor(public db: AngularFirestore, private db2: AngularFireDatabase  ) {
@@ -42,14 +44,14 @@ addReview(rev: Review){
   
 }
 getRatingRestaurant (){
- this.count = 0;
+ 
   this.db.collection('reviews').snapshotChanges().subscribe( res => {
-   
+    let count = 0;
     res.forEach(a => {
       let item:any = a.payload.doc.data();
       item.id = a.payload.doc.id;
-     
-     this.count++;
+      console.log(count + ".." + item.id);
+     count++;
     });
     
   });
